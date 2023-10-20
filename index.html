@@ -17,14 +17,20 @@
         --colorBlack: #000;
         --colorMainRed: #ed1c24;
         --colorNavGray: #333333;
+        --colorLightGray: #666666;
+        --colorBlackText: #242424;
         --fontText: "Open Sans", sans-serif;
         --fontRoboto: "Roboto Condensed", sans-serif;
         --paddingWrap: calc((100% - 1200px) / 2);
       }
+
+      header {
+        border: 1px solid var(--colorWhite);
+      }
+
       .page-logo {
         background: var(--colorMainRed);
         height: 95px;
-        min-width: 100vw;
         animation: logoGrow 0.5s;
         padding-left: var(--paddingWrap);
         padding-right: var(--paddingWrap);
@@ -61,10 +67,122 @@
         padding: 5px 0;
       }
 
+      .mainWrap {
+        display: flex;
+        flex-flow: row wrap;
+        padding-left: var(--paddingWrap);
+        padding-right: var(--paddingWrap);
+        padding-top: 20px;
+      }
+
       .ad-superior-1 {
         border: 1px solid var(--colorBlack);
         margin: 0 auto;
         text-align: center;
+      }
+
+      .ad-side-1 {
+        margin: 40px 0;
+      }
+
+      .BlocksPage-main {
+        border: 1px solid var(--colorBlack);
+        box-sizing: border-box;
+        min-width: inherit;
+        -ms-flex-preferred-size: 580px;
+        flex-basis: 580px;
+        text-align: left;
+        display: inline-block;
+        vertical-align: top;
+        margin-left: auto;
+      }
+
+      .BlocksPage-headline {
+        text-transform: inherit;
+        font-size: 36px;
+        line-height: 1.1;
+        margin: 0 0 20px;
+      }
+
+      .BlocksPage-aside {
+        border: 1px solid var(--colorBlack);
+      }
+
+      .BlocksPage-sectionLabel {
+        color: #ed1c24;
+        font-size: 0.85rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        display: inline-block;
+      }
+
+      .BlocksPage-bar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10px;
+      }
+
+      .MagazinePromo-media {
+        margin-bottom: 10px;
+        position: relative;
+      }
+
+      .MagazinePromo-media img {
+        display: block;
+        max-width: 60%;
+        margin: auto;
+      }
+
+      .Magazine-Link {
+        display: block;
+      }
+
+      .Magazine-Title {
+        color: var(--colorBlackText);
+        font-size: 1.3rem;
+        text-align: center;
+      }
+
+      .FigureHighPriority-info {
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 1.5;
+        color: #555;
+        padding: 10px 0;
+      }
+
+      .blocks {
+        border: 1px solid var(--colorMainRed);
+      }
+
+      @media only screen and (min-width: 1024px) {
+        .BlocksPage-headline {
+          font-size: 58px;
+        }
+
+        .BlocksPage-subHeadline {
+          font-size: 18px;
+          line-height: 1.22;
+          color: var(--colorLightGrey);
+          margin-bottom: 10px;
+        }
+
+        .BlocksPage-main {
+          display: flex;
+          flex-direction: column;
+        }
+
+        .BlocksPage-aside {
+          flex-basis: 300px;
+          margin-left: 30px;
+          display: inline-block;
+          vertical-align: top;
+          position: sticky;
+          top: 56px;
+          margin-left: 30px;
+          padding: 0;
+        }
       }
     </style>
   </head>
@@ -96,20 +214,153 @@
       </nav>
     </header>
     <main>
-      <aside>
-        <div class="ad-superior-1">
-          <img
-            class="img-fluid"
-            src="https://www.adspeed.com/placeholder-728x270-Test.gif"
-            alt=""
-          />
-        </div>
-      </aside>
       <article>
-        <p></p>
+        <aside>
+          <div class="ad-superior-1">
+            <img
+              class="img-fluid"
+              src="https://www.adspeed.com/placeholder-728x270-Test.gif"
+              alt=""
+            />
+          </div>
+        </aside>
+        <div class="mainWrap">
+          <div class="BlocksPage-main">
+            <div class="BlocksPage-sectionLabel">Empresas</div>
+            <h1 class="BlocksPage-headline" itemprop="headline">
+              Las altas tasas de interés meten freno a Tesla en Mexico, dice
+              Elon Musk
+            </h1>
+            <h2 class="BlocksPage-subHeadline">
+              Elon Musk dice que está dudando sobre sus planes de instalar una
+              fábrica en México mientras evalúa las perspectivas económicas y el
+              impacto por las altas tasas de interés.
+            </h2>
+            <div class="AuthorBar">Cosme Fulanito</div>
+            <div class="BlocksPage-bar">
+              <div class="BlocksPage-datePublished">
+                febrero 15, 2023 06:04 PM
+              </div>
+              <div class="BlocksPage-socialShare">
+                <div class="ActionBar">
+                  <ul class="ActionBar-items">
+                    <li class="ActionBar-items-item">
+                      <a
+                        class="FacebookShareButton icon-facebook"
+                        href="https://www.facebook.com/dialog/share?app_id=777329892401991&amp;display=popup&amp;href=https%3A%2F%2Fexpansion.stg.grupo-expansion.psdops.com%2Fempresas%2F2023%2F02%2F15%2Fel-director-general-de-femsa-es-diagnosticado-con-cancer"
+                        target="_blank"
+                        data-cms-ai="0"
+                      >
+                        <span>Facebook</span>
+                      </a>
+                    </li>
+                    <li class="ActionBar-items-item">
+                      <a
+                        class="TwitterTweetButton icon-twitter"
+                        href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fexpansion.stg.grupo-expansion.psdops.com%2Fempresas%2F2023%2F02%2F15%2Fel-director-general-de-femsa-es-diagnosticado-con-cancer&amp;text=El%20director%20general%20de%20Femsa%20es%20diagnosticado%20con%20c%C3%A1ncer"
+                        target="_blank"
+                        data-cms-ai="0"
+                      >
+                        <span>Tweet</span>
+                      </a>
+                    </li>
+                    <li class="ActionBar-items-item">
+                      <a
+                        class="LinkedInShareButton icon-linkedin"
+                        href="https://www.linkedin.com/shareArticle?url=https%3A%2F%2Fexpansion.stg.grupo-expansion.psdops.com%2Fempresas%2F2023%2F02%2F15%2Fel-director-general-de-femsa-es-diagnosticado-con-cancer&amp;mini=true&amp;title=El%20director%20general%20de%20Femsa%20es%20diagnosticado%20con%20c%C3%A1ncer&amp;summary=La%20empresa%20due%C3%B1a%20de%20Oxxo%20adelant%C3%B3%20que%20Daniel%20Rodr%C3%ADguez%20Cofr%C3%A9%20se%20mantendr%C3%A1%20en%20el%20cargo%20durante%20su%20tratamiento%20y%20recuperaci%C3%B3n.&amp;source=Expansi%C3%B3n"
+                        target="_blank"
+                        data-cms-ai="0"
+                      >
+                        <span>LinkedIn</span>
+                      </a>
+                    </li>
+                    <li class="ActionBar-items-item">
+                      <a
+                        class="MailToLink icon-mail"
+                        href="mailto:?body=El%20director%20general%20de%20Femsa%20es%20diagnosticado%20con%20c%C3%A1ncer%0A%0Ahttps%3A%2F%2Fexpansion.stg.grupo-expansion.psdops.com%2Fempresas%2F2023%2F02%2F15%2Fel-director-general-de-femsa-es-diagnosticado-con-cancer%0A%0ALa%20empresa%20due%C3%B1a%20de%20Oxxo%20adelant%C3%B3%20que%20Daniel%20Rodr%C3%ADguez%20Cofr%C3%A9%20se%20mantendr%C3%A1%20en%20el%20cargo%20durante%20su%20tratamiento%20y%20recuperaci%C3%B3n."
+                        data-cms-ai="0"
+                      >
+                        <span>Email</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="BlocksPage-lead">
+              <figure>
+                <img
+                  class="img-fluid"
+                  alt="elon-musk-quiere-cobrar-twitter"
+                  data-srcset="https://cdn-3.expansion.mx/dims4/default/c5d809d/2147483647/strip/true/crop/5500x3673+0+0/resize/1200x801!/format/webp/quality/60/?url=https%3A%2F%2Fcdn-3.expansion.mx%2Ff4%2F61%2Fcb62afa94714b1c928ac66979607%2Fusuarios-de-x-ya-no-podran-bloquear-a-usuarios.JPG 1x"
+                  width="1200"
+                  height="801"
+                  srcset="
+                    https://cdn-3.expansion.mx/dims4/default/c5d809d/2147483647/strip/true/crop/5500x3673+0+0/resize/1200x801!/format/webp/quality/60/?url=https%3A%2F%2Fcdn-3.expansion.mx%2Ff4%2F61%2Fcb62afa94714b1c928ac66979607%2Fusuarios-de-x-ya-no-podran-bloquear-a-usuarios.JPG 1x
+                  "
+                  src="https://cdn-3.expansion.mx/dims4/default/c5d809d/2147483647/strip/true/crop/5500x3673+0+0/resize/1200x801!/format/webp/quality/60/?url=https%3A%2F%2Fcdn-3.expansion.mx%2Ff4%2F61%2Fcb62afa94714b1c928ac66979607%2Fusuarios-de-x-ya-no-podran-bloquear-a-usuarios.JPG"
+                />
+                <figcaption class="FigureHighPriority-info">
+                  <span class="FigureHighPriority-caption" itemprop="caption"
+                    >Elon Musk analiza sus planes de inversión en México.</span
+                  >
+                  <span class="FigureHighPriority-credit" itemprop="author"
+                    >(GONZALO FUENTES/REUTERS)</span
+                  >
+                </figcaption>
+              </figure>
+            </div>
+            <section class="blocks">
+              <div class="first-block">
+                <p>
+                  El presidente ejecutivo de Tesla, <b>Elon Musk</b>, dijo el
+                  miércoles que el fabricante de vehículos eléctricos
+                  <b
+                    >estaba dudando sobre sus planes de instalar una fábrica en
+                    México</b
+                  >
+                  mientras evalúa las perspectivas económicas, al tiempo que
+                  advirtió por el efecto de las <b>altas tasas de interés</b>.
+                </p>
+                <p>
+                  Después de que la compañía incumplió las expectativas de Wall
+                  Street sobre el margen bruto de ganancias, beneficios e
+                  ingresos del tercer trimestre, Musk dijo que quería tener una
+                  mejor idea de hacia dónde se dirigía la economía antes de ir
+                  "a toda máquina" con la construcción de una planta en el norte
+                  de México.
+                </p>
+              </div>
+            </section>
+          </div>
+          <aside class="BlocksPage-aside">
+            <div class="ad-side-1">
+              <img
+                class="img-fluid"
+                src="https://www.adspeed.com/placeholder-306x600-Test.gif"
+                alt=""
+              />
+            </div>
+            <div class="Magazine-promo">
+              <div class="MagazinePromo-media">
+                <a class="Magazine-Link" href="#">
+                  <img
+                    src="https://cdn-3.expansion.mx/dims4/default/52afd70/2147483647/strip/true/crop/400x514+0+11/resize/350x450!/format/webp/quality/60/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F6a%2Fcf%2F3837471a4b99a31b501285e49690%2Fportada-expansion-oct-1.jpg"
+                    alt="Magazine Promo"
+                    class="img-fluid"
+                  />
+                </a>
+              </div>
+              <div class="MagazinePromo-info">
+                <h3 class="Magazine-Title">
+                  Los 100 empresarios más importantes de México
+                </h3>
+              </div>
+            </div>
+          </aside>
+        </div>
       </article>
     </main>
-    <aside></aside>
   </body>
   <script></script>
 </html>
