@@ -22,6 +22,7 @@
         --fontText: "Open Sans", sans-serif;
         --fontRoboto: "Roboto Condensed", sans-serif;
         --paddingWrap: calc((100% - 1200px) / 2);
+        --paddingRelatedContent: calc((100% - 900px) / 2);
       }
 
       header {
@@ -68,6 +69,7 @@
       }
 
       .mainWrap {
+        border: 1px solid orange;
         display: flex;
         flex-flow: row wrap;
         padding-left: var(--paddingWrap);
@@ -227,6 +229,50 @@
         text-align: center;
       }
 
+      .BlocksPage-relatedContent {
+        border: 1px solid green;
+        margin: 30px auto;
+        padding-left: var(--paddingRelatedContent);
+        padding-right: var(--paddingRelatedContent);
+      }
+
+      .CardGrid {
+        border: 1px solid salmon;
+      }
+
+      .CardGrid-title {
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 1.2;
+        margin: 18px 0;
+        position: relative;
+      }
+
+      .CardGrid-title::after {
+        content: "";
+        height: 4px;
+        background-color: #ed1c24;
+        left: 0;
+        bottom: -5px;
+        position: absolute;
+        width: calc(20%);
+      }
+
+      .LargePromo-duration,
+      .LargePromo-category {
+        display: none;
+      }
+
+      .LargePromo-title .Link {
+        color: var(--colorBlackText);
+        display: block;
+        font-size: 18px;
+        font-weight: 700;
+        margin: 10px 0;
+        line-height: 21.6px;
+        text-decoration: none;
+      }
+
       @media only screen and (min-width: 1024px) {
         .BlocksPage-headline {
           font-size: 58px;
@@ -252,6 +298,25 @@
           position: sticky;
           top: 56px;
           margin-left: 30px;
+          padding: 0;
+        }
+
+        .CardGrid-items .CardGrid-items-item {
+          margin: 5px 5px;
+          flex: 1;
+          flex-grow: 0;
+          flex-shrink: 0;
+          flex-basis: calc(33.3% - 10px);
+          width: calc(33.3% - 10px);
+          max-width: calc(33.3% - 10px);
+        }
+
+        .CardGrid-items {
+          display: flex;
+          flex-wrap: wrap;
+          overflow: hidden;
+          justify-content: center;
+          list-style-type: none;
           padding: 0;
         }
       }
@@ -381,7 +446,7 @@
                 </figcaption>
               </figure>
             </div>
-            <div class="BlocksArticle">
+            <div class="BlockWrap">
               <section class="blocks" id="block-0">
                 <div class="block">
                   <p>
@@ -496,7 +561,7 @@
               </section>
             </div>
             <div class="BlocksPage-tags">
-              <h2 class="BlocksPage-tags-heading">Tags</h2>
+              <h3 class="BlocksPage-tags-heading">Tags</h3>
               <div class="BlocksPage-tags-body">
                 <a class="Link" href="https://expansion.mx/tesla-en-mexico"
                   >Tesla en México</a
@@ -567,9 +632,172 @@
             </div>
           </aside>
         </div>
+        <div class="BlocksPage-relatedContent">
+          <section class="CardGrid">
+            <h3 class="CardGrid-title">
+              <span class="Link">Recomendaciones</span>
+            </h3>
+            <ul class="CardGrid-items">
+              <li class="CardGrid-items-item" style="">
+                <div
+                  class="LargePromo"
+                  data-promo-type="article"
+                  data-module=""
+                >
+                  <div class="LargePromo-media">
+                    <i class="icon article"></i>
+                    <a
+                      class="Link"
+                      href="https://expansion.mx/tecnologia/2023/10/19/despidos-masivos-google-y-nokia"
+                    >
+                      <img
+                        class="Image lazyloaded img-fluid"
+                        src="https://cdn-3.expansion.mx/dims4/default/b8ad931/2147483647/strip/true/crop/1798x1013+1+0/resize/600x338!/format/webp/quality/60/?url=https%3A%2F%2Fcdn-3.expansion.mx%2Ff8%2F2c%2Feb388e814ff5acacd9beb1e9dfe6%2Fdespidos-masivos-en-google-y-nokia.jpeg"
+                        alt=""
+                        data-src="https://cdn-3.expansion.mx/dims4/default/b8ad931/2147483647/strip/true/crop/1798x1013+1+0/resize/600x338!/format/webp/quality/60/?url=https%3A%2F%2Fcdn-3.expansion.mx%2Ff8%2F2c%2Feb388e814ff5acacd9beb1e9dfe6%2Fdespidos-masivos-en-google-y-nokia.jpeg"
+                        data-srcset="https://cdn-3.expansion.mx/dims4/default/b8ad931/2147483647/strip/true/crop/1798x1013+1+0/resize/600x338!/format/webp/quality/60/?url=https%3A%2F%2Fcdn-3.expansion.mx%2Ff8%2F2c%2Feb388e814ff5acacd9beb1e9dfe6%2Fdespidos-masivos-en-google-y-nokia.jpeg 1x,https://cdn-3.expansion.mx/dims4/default/1bb431d/2147483647/strip/true/crop/1798x1013+1+0/resize/1200x676!/format/webp/quality/60/?url=https%3A%2F%2Fcdn-3.expansion.mx%2Ff8%2F2c%2Feb388e814ff5acacd9beb1e9dfe6%2Fdespidos-masivos-en-google-y-nokia.jpeg 2x"
+                        width="600"
+                        height="338"
+                        srcset="
+                          https://cdn-3.expansion.mx/dims4/default/b8ad931/2147483647/strip/true/crop/1798x1013+1+0/resize/600x338!/format/webp/quality/60/?url=https%3A%2F%2Fcdn-3.expansion.mx%2Ff8%2F2c%2Feb388e814ff5acacd9beb1e9dfe6%2Fdespidos-masivos-en-google-y-nokia.jpeg  1x,
+                          https://cdn-3.expansion.mx/dims4/default/1bb431d/2147483647/strip/true/crop/1798x1013+1+0/resize/1200x676!/format/webp/quality/60/?url=https%3A%2F%2Fcdn-3.expansion.mx%2Ff8%2F2c%2Feb388e814ff5acacd9beb1e9dfe6%2Fdespidos-masivos-en-google-y-nokia.jpeg 2x
+                        "
+                      />
+                    </a>
+                  </div>
+                  <div class="LargePromo-info">
+                    <div class="LargePromo-category">
+                      <a class="Link" href="https://expansion.mx/tecnologia"
+                        >Tecnología</a
+                      >
+                    </div>
+                    <h3 class="LargePromo-title">
+                      <a
+                        class="Link"
+                        href="https://expansion.mx/tecnologia/2023/10/19/despidos-masivos-google-y-nokia"
+                        >Los despidos masivos no paran. Google y Nokia anuncian
+                        más recortes</a
+                      >
+                    </h3>
+                    <div class="LargePromo-duration">2 Min Read</div>
+                  </div>
+                </div>
+              </li>
+              <li class="CardGrid-items-item" style="">
+                <div
+                  class="LargePromo"
+                  data-promo-type="article"
+                  data-module=""
+                >
+                  <div class="LargePromo-media">
+                    <i class="icon article"></i>
+                    <a
+                      class="Link"
+                      href="https://expansion.mx/tecnologia/2023/10/16/los-despidos-en-las-tecnologicas-no-paran-linkedin-recortara-a-668-empleados"
+                    >
+                      <img
+                        class="Image lazyloaded img-fluid"
+                        src="https://cdn-3.expansion.mx/dims4/default/ee836d0/2147483647/strip/true/crop/713x402+0+44/resize/600x338!/format/webp/quality/60/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F25%2F25%2F5c3b81de481888fcf1edfa948597%2Flinkedin-despidos-masivos.jpg"
+                        alt="LinkedIn anuncia casi 700 despidos"
+                        data-src="https://cdn-3.expansion.mx/dims4/default/ee836d0/2147483647/strip/true/crop/713x402+0+44/resize/600x338!/format/webp/quality/60/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F25%2F25%2F5c3b81de481888fcf1edfa948597%2Flinkedin-despidos-masivos.jpg"
+                        data-srcset="https://cdn-3.expansion.mx/dims4/default/ee836d0/2147483647/strip/true/crop/713x402+0+44/resize/600x338!/format/webp/quality/60/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F25%2F25%2F5c3b81de481888fcf1edfa948597%2Flinkedin-despidos-masivos.jpg 1x,https://cdn-3.expansion.mx/dims4/default/78d9e1f/2147483647/strip/true/crop/713x402+0+44/resize/1200x676!/format/webp/quality/60/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F25%2F25%2F5c3b81de481888fcf1edfa948597%2Flinkedin-despidos-masivos.jpg 2x"
+                        width="600"
+                        height="338"
+                        srcset="
+                          https://cdn-3.expansion.mx/dims4/default/ee836d0/2147483647/strip/true/crop/713x402+0+44/resize/600x338!/format/webp/quality/60/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F25%2F25%2F5c3b81de481888fcf1edfa948597%2Flinkedin-despidos-masivos.jpg  1x,
+                          https://cdn-3.expansion.mx/dims4/default/78d9e1f/2147483647/strip/true/crop/713x402+0+44/resize/1200x676!/format/webp/quality/60/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F25%2F25%2F5c3b81de481888fcf1edfa948597%2Flinkedin-despidos-masivos.jpg 2x
+                        "
+                      />
+                    </a>
+                  </div>
+                  <div class="LargePromo-info">
+                    <div class="LargePromo-category">
+                      <a class="Link" href="https://expansion.mx/tecnologia"
+                        >Tecnología</a
+                      >
+                    </div>
+                    <h3 class="LargePromo-title">
+                      <a
+                        class="Link"
+                        href="https://expansion.mx/tecnologia/2023/10/16/los-despidos-en-las-tecnologicas-no-paran-linkedin-recortara-a-668-empleados"
+                        >Los despidos en las tecnológicas no paran. LinkedIn
+                        recortará a 668 empleados</a
+                      >
+                    </h3>
+                    <div class="LargePromo-duration">1 Min Read</div>
+                  </div>
+                </div>
+              </li>
+              <li class="CardGrid-items-item" style="">
+                <div
+                  class="LargePromo"
+                  data-promo-type="article"
+                  data-module=""
+                >
+                  <div class="LargePromo-media">
+                    <i class="icon article"></i>
+                    <a
+                      class="Link"
+                      href="https://expansion.mx/tecnologia/2023/10/13/qualcomm-recorta-1200-empleados"
+                    >
+                      <img
+                        class="Image lazyloaded img-fluid"
+                        src="https://cdn-3.expansion.mx/dims4/default/826db65/2147483647/strip/true/crop/362x204+0+7/resize/600x338!/format/webp/quality/60/?url=https%3A%2F%2Fcdn-3.expansion.mx%2Fmedia%2F2013%2F02%2F12%2Fqualcomm_1.jpg"
+                        alt="Qualcomm premia a los accionistas. (Foto: Cortesía CNNMoney)"
+                        data-src="https://cdn-3.expansion.mx/dims4/default/826db65/2147483647/strip/true/crop/362x204+0+7/resize/600x338!/format/webp/quality/60/?url=https%3A%2F%2Fcdn-3.expansion.mx%2Fmedia%2F2013%2F02%2F12%2Fqualcomm_1.jpg"
+                        data-srcset="https://cdn-3.expansion.mx/dims4/default/826db65/2147483647/strip/true/crop/362x204+0+7/resize/600x338!/format/webp/quality/60/?url=https%3A%2F%2Fcdn-3.expansion.mx%2Fmedia%2F2013%2F02%2F12%2Fqualcomm_1.jpg 1x,https://cdn-3.expansion.mx/dims4/default/174451d/2147483647/strip/true/crop/362x204+0+7/resize/1200x676!/format/webp/quality/60/?url=https%3A%2F%2Fcdn-3.expansion.mx%2Fmedia%2F2013%2F02%2F12%2Fqualcomm_1.jpg 2x"
+                        width="600"
+                        height="338"
+                        srcset="
+                          https://cdn-3.expansion.mx/dims4/default/826db65/2147483647/strip/true/crop/362x204+0+7/resize/600x338!/format/webp/quality/60/?url=https%3A%2F%2Fcdn-3.expansion.mx%2Fmedia%2F2013%2F02%2F12%2Fqualcomm_1.jpg  1x,
+                          https://cdn-3.expansion.mx/dims4/default/174451d/2147483647/strip/true/crop/362x204+0+7/resize/1200x676!/format/webp/quality/60/?url=https%3A%2F%2Fcdn-3.expansion.mx%2Fmedia%2F2013%2F02%2F12%2Fqualcomm_1.jpg 2x
+                        "
+                      />
+                    </a>
+                  </div>
+                  <div class="LargePromo-info">
+                    <div class="LargePromo-category">
+                      <a class="Link" href="https://expansion.mx/tecnologia"
+                        >Tecnología</a
+                      >
+                    </div>
+                    <h3 class="LargePromo-title">
+                      <a
+                        class="Link"
+                        href="https://expansion.mx/tecnologia/2023/10/13/qualcomm-recorta-1200-empleados"
+                        >Vuelven los despidos masivos: Qualcomm recorta a 1,200
+                        empleados</a
+                      >
+                    </h3>
+                    <div class="LargePromo-duration">1 Min Read</div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </section>
+        </div>
       </article>
+      <aside>
+        <div class="ad-superior-1">
+          <img
+            class="img-fluid"
+            src="https://www.adspeed.com/placeholder-728x270-Test.gif"
+            alt=""
+          />
+        </div>
+      </aside>
     </main>
-    <footer style="height: 500px; background-color: #ededed; font-size: 2rem; text-align: center; margin-top: 40px;">Footer</footer>
+    <footer
+      style="
+        height: 500px;
+        background-color: #ededed;
+        font-size: 2rem;
+        text-align: center;
+        margin-top: 40px;
+      "
+    >
+      <h3>Footer</h3>
+    </footer>
   </body>
   <script></script>
 </html>
