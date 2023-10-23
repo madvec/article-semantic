@@ -273,6 +273,54 @@
         text-decoration: none;
       }
 
+      .BlocksPage-below {
+        border: 2px solid skyblue;
+        max-width: 640px;
+        margin: auto;
+      }
+
+      .ArticleAuthorDetailed-title {
+        color: var(--colorBlackText);
+        font-size: 16px;
+      }
+
+      .authors-module ul {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      .ArticleAuthor {
+        display: flex;
+      }
+
+      .authors-module .ArticleAuthor img {
+        height: 40px;
+        width: 40px;
+      }
+      .authors-module .ArticleAuthor img {
+        border-radius: 50%;
+        height: 60px;
+        object-fit: initial;
+        width: 60px;
+      }
+
+      .authorData {
+        padding: 0 12px;
+      }
+
+      .authorData a {
+        color: var(--colorBlackText);
+        text-decoration: none;
+      }
+
+      .tittleAuthor {
+        color: var(--colorMainRed);
+        font-size: 1.1rem;
+        font-weight: 600;
+        margin: 0 0 4px;
+        text-decoration: none;
+      }
+
       @media only screen and (min-width: 1024px) {
         .BlocksPage-headline {
           font-size: 58px;
@@ -775,6 +823,65 @@
               </li>
             </ul>
           </section>
+        </div>
+        <div class="BlocksPage-below">
+          <div class="authors-module">
+            <h3 class="ArticleAuthorDetailed-title">Más acerca del autor:</h3>
+            <ul>
+              <li>
+                <div class="ArticleAuthor">
+                  <a class="Link" href="https://twitter.com/expansionmx">
+                    <img
+                      class="Image lazyloaded"
+                      src="https://cdn-3.expansion.mx/dims4/default/8cc2b13/2147483647/strip/true/crop/678x678+91+0/resize/100x100!/format/webp/quality/60/?url=https%3A%2F%2Fcdn-3.expansion.mx%2Fe3%2F83%2F2d0afd524e70a8864e2b6a1b5834%2F30-307416-profile-icon-png-image-free-download-searchpng-employee.png"
+                      alt=""
+                      data-src="https://cdn-3.expansion.mx/dims4/default/8cc2b13/2147483647/strip/true/crop/678x678+91+0/resize/100x100!/format/webp/quality/60/?url=https%3A%2F%2Fcdn-3.expansion.mx%2Fe3%2F83%2F2d0afd524e70a8864e2b6a1b5834%2F30-307416-profile-icon-png-image-free-download-searchpng-employee.png"
+                      data-srcset="https://cdn-3.expansion.mx/dims4/default/8cc2b13/2147483647/strip/true/crop/678x678+91+0/resize/100x100!/format/webp/quality/60/?url=https%3A%2F%2Fcdn-3.expansion.mx%2Fe3%2F83%2F2d0afd524e70a8864e2b6a1b5834%2F30-307416-profile-icon-png-image-free-download-searchpng-employee.png 1x,https://cdn-3.expansion.mx/dims4/default/72133eb/2147483647/strip/true/crop/678x678+91+0/resize/200x200!/format/webp/quality/60/?url=https%3A%2F%2Fcdn-3.expansion.mx%2Fe3%2F83%2F2d0afd524e70a8864e2b6a1b5834%2F30-307416-profile-icon-png-image-free-download-searchpng-employee.png 2x"
+                      width="100"
+                      height="100"
+                      srcset="
+                        https://cdn-3.expansion.mx/dims4/default/8cc2b13/2147483647/strip/true/crop/678x678+91+0/resize/100x100!/format/webp/quality/60/?url=https%3A%2F%2Fcdn-3.expansion.mx%2Fe3%2F83%2F2d0afd524e70a8864e2b6a1b5834%2F30-307416-profile-icon-png-image-free-download-searchpng-employee.png 1x,
+                        https://cdn-3.expansion.mx/dims4/default/72133eb/2147483647/strip/true/crop/678x678+91+0/resize/200x200!/format/webp/quality/60/?url=https%3A%2F%2Fcdn-3.expansion.mx%2Fe3%2F83%2F2d0afd524e70a8864e2b6a1b5834%2F30-307416-profile-icon-png-image-free-download-searchpng-employee.png 2x
+                      "
+                    />
+                  </a>
+                  <div class="authorData">
+                    <a class="Link" href="https://twitter.com/expansionmx">
+                      <div class="tittleAuthor">Expansión</div>
+                    </a>
+                    <div class="twitterAuthor">
+                      <a class="Link" href="https://twitter.com/expansionmx">
+                      </a
+                      ><a href="https://twitter.com/expansionmx"
+                        >@expansionmx</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="widgetMC">
+            <h3>Newsletter</h3>
+            <form action="#">
+              <div class="widget-description">
+                Únete a nuestra comunidad. Te mandaremos una selección de
+                nuestras historias.
+              </div>
+              <input
+                type="text"
+                placeholder="Tu correo electrónico"
+                id="idEmailForm1Sidebar"
+                name="Email"
+              />
+              <input
+                type="button"
+                id="submitButtonXSidebar"
+                name="submitButton"
+                value="Suscribete"
+              />
+            </form>
+          </div>
         </div>
       </article>
       <aside>
