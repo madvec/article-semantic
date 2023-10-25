@@ -91,9 +91,18 @@
         display: inline-block;
         margin: 20px 0 40px;
         vertical-align: top;
+        padding: 0;
+      }
+
+      .aside-wrapper-top {
+        position: relative;
+        padding: 0;
+      }
+
+      .aside-wrapper-bottom {
+        padding: 0;
         position: sticky;
         top: 56px;
-        padding: 0;
       }
 
       .BlocksPage-main {
@@ -240,7 +249,8 @@
         border: 1px solid salmon;
       }
 
-      .CardGrid-title {
+      .CardGrid-title,
+      .OrderedList-title {
         font-size: 18px;
         font-weight: 700;
         line-height: 1.2;
@@ -248,7 +258,8 @@
         position: relative;
       }
 
-      .CardGrid-title::after {
+      .CardGrid-title::after,
+      .OrderedList-title::after {
         content: "";
         height: 4px;
         background-color: #ed1c24;
@@ -319,6 +330,31 @@
         font-weight: 600;
         margin: 0 0 4px;
         text-decoration: none;
+      }
+
+      .OrderedList-items {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      .OrderedList-items-item {
+        display: flex;
+        text-decoration: none;
+        padding: 10px 0 14px;
+        line-height: normal;
+        border-bottom: 1px solid #c1c1c1;
+        color: #333;
+      }
+
+      .OrderedList-items-item .Link {
+        color: #242424;
+        font-size: 14px;
+        font-weight: 700;
+        text-decoration: none;
+      }
+
+      .OrderedList-items-item:last-child {
+        border-bottom: 0;
       }
 
       @media only screen and (min-width: 1024px) {
@@ -627,56 +663,138 @@
             </div>
           </div>
           <aside class="BlocksPage-aside">
-            <div class="ad-side-1">
-              <img
-                class="img-fluid"
-                src="https://www.adspeed.com/placeholder-306x600-Test.gif"
-                alt=""
-              />
-            </div>
-            <div class="Magazine-promo">
-              <div class="MagazinePromo-media">
-                <a class="Magazine-Link" href="#">
-                  <img
-                    src="https://cdn-3.expansion.mx/dims4/default/52afd70/2147483647/strip/true/crop/400x514+0+11/resize/350x450!/format/webp/quality/60/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F6a%2Fcf%2F3837471a4b99a31b501285e49690%2Fportada-expansion-oct-1.jpg"
-                    alt="Magazine Promo"
-                    class="img-fluid"
-                  />
-                </a>
+            <div class="aside-wrapper-top">
+              <div class="ad-side-1">
+                <img
+                  class="img-fluid"
+                  src="https://www.adspeed.com/placeholder-306x600-Test.gif"
+                  alt=""
+                />
               </div>
-              <div class="MagazinePromo-info">
-                <h3 class="Magazine-Title">
-                  Los 100 empresarios más importantes de México
-                </h3>
-              </div>
-            </div>
-            <div class="widgetMC">
-              <h3>Newsletter</h3>
-              <form action="#">
-                <div class="widget-description">
-                  Únete a nuestra comunidad. Te mandaremos una selección de
-                  nuestras historias.
+              <div class="Magazine-promo">
+                <div class="MagazinePromo-media">
+                  <a class="Magazine-Link" href="#">
+                    <img
+                      src="https://cdn-3.expansion.mx/dims4/default/52afd70/2147483647/strip/true/crop/400x514+0+11/resize/350x450!/format/webp/quality/60/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F6a%2Fcf%2F3837471a4b99a31b501285e49690%2Fportada-expansion-oct-1.jpg"
+                      alt="Magazine Promo"
+                      class="img-fluid"
+                    />
+                  </a>
                 </div>
-                <input
-                  type="text"
-                  placeholder="Tu correo electrónico"
-                  id="idEmailForm1Sidebar"
-                  name="Email"
-                />
-                <input
-                  type="button"
-                  id="submitButtonXSidebar"
-                  name="submitButton"
-                  value="Suscribete"
-                />
-              </form>
+                <div class="MagazinePromo-info">
+                  <h3 class="Magazine-Title">
+                    Los 100 empresarios más importantes de México
+                  </h3>
+                </div>
+              </div>
+              <div class="widgetMC">
+                <h3>Newsletter</h3>
+                <form action="#">
+                  <div class="widget-description">
+                    Únete a nuestra comunidad. Te mandaremos una selección de
+                    nuestras historias.
+                  </div>
+                  <input
+                    type="text"
+                    placeholder="Tu correo electrónico"
+                    id="idEmailForm1Sidebar"
+                    name="Email"
+                  />
+                  <input
+                    type="button"
+                    id="submitButtonXSidebar"
+                    name="submitButton"
+                    value="Suscribete"
+                  />
+                </form>
+              </div>
             </div>
-            <div class="ad-side-2">
-              <img
-                class="img-fluid"
-                src="https://www.adspeed.com/placeholder-306x600-Test.gif"
-                alt=""
-              />
+            <div class="aside-wrapper-bottom">
+              <div class="ad-side-2">
+                <img
+                  class="img-fluid"
+                  src="https://www.adspeed.com/placeholder-306x250-Test.gif"
+                  alt=""
+                />
+              </div>
+              <div class="StoryPromo">
+                <div class="StoryPromo-media">
+                  <a class="Link" href="https://expansion.mx/expansion-podcast">
+                    <img
+                      class="Image lazyloaded"
+                      src="https://cdn-3.expansion.mx/dims4/default/a3fce63/2147483647/strip/true/crop/200x150+0+0/resize/100x75!/format/webp/quality/60/?url=https%3A%2F%2Fcdn-3.expansion.mx%2Fb1%2F93%2F5f936bb34e37b4dc0331db180239%2Fpodcasts.jpeg"
+                      alt=""
+                      data-src="https://cdn-3.expansion.mx/dims4/default/a3fce63/2147483647/strip/true/crop/200x150+0+0/resize/100x75!/format/webp/quality/60/?url=https%3A%2F%2Fcdn-3.expansion.mx%2Fb1%2F93%2F5f936bb34e37b4dc0331db180239%2Fpodcasts.jpeg"
+                      data-srcset="https://cdn-3.expansion.mx/dims4/default/a3fce63/2147483647/strip/true/crop/200x150+0+0/resize/100x75!/format/webp/quality/60/?url=https%3A%2F%2Fcdn-3.expansion.mx%2Fb1%2F93%2F5f936bb34e37b4dc0331db180239%2Fpodcasts.jpeg 1x,https://cdn-3.expansion.mx/dims4/default/c688ec8/2147483647/strip/true/crop/200x150+0+0/resize/200x150!/format/webp/quality/60/?url=https%3A%2F%2Fcdn-3.expansion.mx%2Fb1%2F93%2F5f936bb34e37b4dc0331db180239%2Fpodcasts.jpeg 2x"
+                      width="100"
+                      height="75"
+                      srcset="
+                        https://cdn-3.expansion.mx/dims4/default/a3fce63/2147483647/strip/true/crop/200x150+0+0/resize/100x75!/format/webp/quality/60/?url=https%3A%2F%2Fcdn-3.expansion.mx%2Fb1%2F93%2F5f936bb34e37b4dc0331db180239%2Fpodcasts.jpeg  1x,
+                        https://cdn-3.expansion.mx/dims4/default/c688ec8/2147483647/strip/true/crop/200x150+0+0/resize/200x150!/format/webp/quality/60/?url=https%3A%2F%2Fcdn-3.expansion.mx%2Fb1%2F93%2F5f936bb34e37b4dc0331db180239%2Fpodcasts.jpeg 2x
+                      "
+                    />
+                  </a>
+                </div>
+                <div class="StoryPromo-info">
+                  <div class="StoryPromo-category">
+                    <a
+                      class="Link"
+                      href="https://expansion.mx/expansion-podcast"
+                      >podcast</a
+                    >
+                  </div>
+                  <h3 class="StoryPromo-title">
+                    <a
+                      class="Link"
+                      href="https://expansion.mx/expansion-podcast"
+                      >Escucha nuestros podcast aquí</a
+                    >
+                  </h3>
+                </div>
+              </div>
+              <div class="OrderedList">
+                <h3 class="OrderedList-title">Lo Último</h3>
+                <ul class="OrderedList-items" data-list-type="plain">
+                  <li class="OrderedList-items-item">
+                    <a
+                      class="Link"
+                      href="https://politica.expansion.mx/mexico/2023/10/20/vacunacion-covid-2023-batalla-con-reactivos-sin-actualizar"
+                      >Campaña de vacunación covid 2023, una batalla con
+                      reactivos sin actualizar</a
+                    >
+                  </li>
+                  <li class="OrderedList-items-item">
+                    <a
+                      class="Link"
+                      href="https://expansion.mx/empresas/2023/10/20/que-ha-pasado-con-5-g-en-mexico"
+                      >5G en México: sólo 2.8% de usuarios de telefonía migrarán
+                      a la nueva red en 2023</a
+                    >
+                  </li>
+                  <li class="OrderedList-items-item">
+                    <a
+                      class="Link"
+                      href="https://expansion.mx/mundo/2023/10/20/hamas-libera-dos-rehenes-estadounidenses"
+                      >Hamás libera a dos rehenes estadounidenses</a
+                    >
+                  </li>
+                  <li class="OrderedList-items-item">
+                    <a
+                      class="Link"
+                      href="https://lifeandstyle.expansion.mx/entretenimiento/2023/10/20/la-uefa-no-organizara-ningun-partido-en-israel-hasta-nueva-orden"
+                      >La UEFA no organizará ningún partido en Israel “hasta
+                      nueva orden”</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="ad-side-2">
+                <img
+                  class="img-fluid"
+                  src="https://www.adspeed.com/placeholder-306x600-Test.gif"
+                  alt=""
+                />
+              </div>
             </div>
           </aside>
         </div>
