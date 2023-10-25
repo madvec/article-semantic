@@ -357,6 +357,42 @@
         border-bottom: 0;
       }
 
+      .StoryPromo {
+        background: #ededed;
+        padding: 10px 8px;
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 10px;
+      }
+
+      .StoryPromo-media {
+        position: relative;
+        z-index: 0;
+        margin-right: 10px;
+        flex-grow: 1;
+        flex-shrink: 1;
+      }
+
+      .StoryPromo-info,
+      .StoryPromo-media {
+        position: relative;
+        overflow: hidden;
+        -ms-flex: 1;
+        flex: 1;
+      }
+
+      .StoryPromo-media img {
+        display: block;
+        width: 60px;
+        border-radius: 50%;
+        border: 2px solid #e4405f;
+        object-fit: cover;
+        padding: 2px;
+        height: 60px;
+        max-width: 130px;
+      }
+
       @media only screen and (min-width: 1024px) {
         .BlocksPage-headline {
           font-size: 58px;
