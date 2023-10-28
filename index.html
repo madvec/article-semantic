@@ -26,7 +26,7 @@
       }
 
       header {
-        border: 1px solid var(--colorWhite);
+        border: 2px solid var(--colorWhite);
       }
 
       .page-logo {
@@ -369,9 +369,10 @@
       .StoryPromo-media {
         position: relative;
         z-index: 0;
-        margin-right: 10px;
+        margin-right: 5px;
         flex-grow: 1;
         flex-shrink: 1;
+        max-width: 60px;
       }
 
       .StoryPromo-info,
@@ -380,6 +381,26 @@
         overflow: hidden;
         -ms-flex: 1;
         flex: 1;
+      }
+
+      .StoryPromo-category a {
+        color: var(--colorBlackText);
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 10px;
+        margin-bottom: 3px;
+        text-transform: uppercase;
+      }
+
+      .StoryPromo-title {
+        line-height: 20px;
+      }
+
+      .StoryPromo-title a {
+        font-size: 15px;
+        font-weight: 400;
+        text-decoration: none;
+        color: var(--colorBlackText);
       }
 
       .StoryPromo-media img {
@@ -391,6 +412,143 @@
         padding: 2px;
         height: 60px;
         max-width: 130px;
+      }
+
+      .Enhancement {
+        clear: both;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        max-width: 100%;
+      }
+
+      .module-title {
+        font-size: 16px;
+        font-weight: 700;
+        margin-top: 15px;
+        margin-bottom: 15px;
+      }
+
+      .BasicPromo {
+        align-items: flex-start;
+        display: flex;
+      }
+
+      .BasicPromo-media {
+        position: relative;
+        z-index: 0;
+        margin-right: 10px;
+        flex-grow: 0;
+        flex-shrink: 1;
+      }
+
+      .BasicPromo-media img {
+        max-width: 130px;
+      }
+
+      .BasicPromo-info {
+        position: relative;
+        flex: 1;
+      }
+
+      .BasicPromo-category a {
+        color: var(--colorMainRed);
+        text-decoration: none;
+        font-size: 10px;
+        font-weight: 600;
+        margin-bottom: 3px;
+        text-transform: uppercase;
+      }
+
+      .BasicPromo-title {
+        line-height: 20px;
+      }
+
+      .BasicPromo-title a {
+        color: #242424;
+        text-decoration: none;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 1.2;
+      }
+
+      .BlocksPage-above {
+        border: 2px solid blueviolet;
+      }
+
+      footer {
+        height: 500px;
+        background-color: #ededed;
+        font-size: 2rem;
+        text-align: center;
+        margin-top: 40px;
+      }
+
+      .desktop {
+        display: block;
+      }
+
+      .banner {
+        position: relative;
+      }
+
+      .desktop .banner-container {
+        display: grid;
+        grid-template-columns: 20% 60% 20%;
+        grid-template-rows: 80% 20%;
+        max-height: 300px;
+        height: 100%;
+        z-index: 1;
+        position: absolute;
+        width: 100%;
+        top: 0;
+        left: 0;
+      }
+
+      .banner img {
+        width: 100%;
+        height: auto;
+      }
+
+      .banner-container a {
+        display: block;
+        font-size: 0;
+      }
+
+      @media only screen and (max-width: 767px) {
+        .desktop {
+          display: none;
+        }
+
+        .mobile {
+          display: block;
+        }
+
+        .mobile .banner-container {
+          display: grid;
+          grid-template-columns: 50% 50%;
+          grid-template-rows: 62% 28% 10%;
+          max-height: 573px;
+          height: 100%;
+          z-index: 1;
+          position: absolute;
+          width: 100%;
+          top: 0;
+          left: 0;
+        }
+
+        .titulo,
+        .mobile .banner-politica {
+          grid-column: span 2;
+        }
+      }
+      @media only screen and (min-width: 768px) {
+        .desktop {
+          display: block;
+        }
+
+        .mobile {
+          display: none;
+        }
       }
 
       @media only screen and (min-width: 1024px) {
@@ -471,6 +629,85 @@
     </header>
     <main>
       <article>
+        <div class="BlocksPage-above" data-modulewell="">
+          <div class="RawHtmlModule" data-module="">
+            <div class="raw-html-code">
+              <div class="banner desktop">
+                <img
+                  src="https://cdn-3.expansion.mx/01/d1/9e10c77849eaa6b93911975dc8cd/bannerpresidenciables2024.jpg"
+                  width="100%"
+                  height="auto"
+                  alt="decisión2023"
+                  usemap="#decision"
+                />
+                <div class="banner-container">
+                  <a
+                    class="banner-conocela-1"
+                    href="https://politica.expansion.mx/claudia-sheinbaum"
+                    target="_blank"
+                    >Consulta</a
+                  >
+                  <div class="banner-politica"></div>
+                  <a
+                    class="banner-conocela-2"
+                    href="https://politica.expansion.mx/tag/xochitl-galvez-ruiz"
+                    target="_blank"
+                    >Consulta</a
+                  >
+                  <a
+                    class="banner-entrevista-1"
+                    href="https://www.youtube.com/playlist?list=PLqWNtEKKZzOX5gPXXk7MXXymbwyaPNw3e"
+                    target="_blank"
+                    >Consulta</a
+                  >
+                  <div class="banner-politica"></div>
+                  <a
+                    class="banner-entrevista-2"
+                    href="https://www.youtube.com/playlist?list=PLqWNtEKKZzOXiX53K3AOoLIkRtRideM8Y"
+                    target="_blank"
+                    >Consulta</a
+                  >
+                </div>
+              </div>
+              <div class="banner mobile">
+                <img
+                  src="https://cdn-3.expansion.mx/93/81/03298eed46dfbd417ab95c80294f/bannerpresidenciables2024mobile.jpg"
+                  width="100%"
+                  height="auto"
+                  alt="decisión2023"
+                  usemap="#decision"
+                />
+                <div class="banner-container">
+                  <div class="banner-politica"></div>
+                  <a
+                    class="banner-conocela-1"
+                    href="https://politica.expansion.mx/claudia-sheinbaum"
+                    target="_blank"
+                    >Consulta</a
+                  >
+                  <a
+                    class="banner-conocela-2"
+                    href="https://politica.expansion.mx/tag/xochitl-galvez-ruiz"
+                    target="_blank"
+                    >Consulta</a
+                  >
+                  <a
+                    class="banner-entrevista-1"
+                    href="https://www.youtube.com/playlist?list=PLqWNtEKKZzOX5gPXXk7MXXymbwyaPNw3e"
+                    target="_blank"
+                    >Consulta</a
+                  >
+                  <a
+                    class="banner-entrevista-2"
+                    href="https://www.youtube.com/playlist?list=PLqWNtEKKZzOXiX53K3AOoLIkRtRideM8Y"
+                    target="_blank"
+                    >Consulta</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
         <aside>
           <div class="ad-superior-1">
             <img
@@ -606,6 +843,40 @@
                     de ir "a toda máquina" con la construcción de una planta en
                     el norte de México.
                   </p>
+                  <div class="Enhancement">
+                    <h3 class="module-title">
+                      <span class="Link">Puede interesarte</span>
+                    </h3>
+                    <div class="BasicPromo">
+                      <div class="BasicPromo-media">
+                        <a href="" class="Link">
+                          <img
+                            class="img-fluid"
+                            src="https://cdn-3.expansion.mx/dims4/default/1fb6cd5/2147483647/strip/true/crop/1163x771+0+0/resize/1200x796!/format/webp/quality/60/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F70%2Ff7%2F099baba748df9b18fdad2f664447%2Fofrenda-para-mascotas-cuando-se-pone.jpeg"
+                            alt=""
+                          />
+                        </a>
+                      </div>
+                      <div class="BasicPromo-info">
+                        <div class="BasicPromo-category">
+                          <a
+                            class="Link"
+                            href="https://expansion.mx/tendencias/2023/10/25/cuando-se-pone-ofrenda-perros-mascotas?utm_source=internal&amp;utm_medium=branded"
+                            >Tendencias</a
+                          >
+                        </div>
+                        <h3 class="BasicPromo-title">
+                          <a
+                            class="Link"
+                            href="https://expansion.mx/tendencias/2023/10/25/cuando-se-pone-ofrenda-perros-mascotas?utm_source=internal&amp;utm_medium=branded"
+                            >Ofrenda para mascotas: Cuándo se pone y qué debe
+                            llevar el altar</a
+                          >
+                        </h3>
+                        <!-- Branded link info-->
+                      </div>
+                    </div>
+                  </div>
                   <p>
                     "Si las tasas de interés siguen altas... es mucho más
                     difícil para la gente comprar un auto. Simplemente no pueden
@@ -1048,15 +1319,7 @@
         </div>
       </aside>
     </main>
-    <footer
-      style="
-        height: 500px;
-        background-color: #ededed;
-        font-size: 2rem;
-        text-align: center;
-        margin-top: 40px;
-      "
-    >
+    <footer>
       <h3>Footer</h3>
     </footer>
   </body>
